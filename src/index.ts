@@ -20,6 +20,18 @@ const dbConnect = async (): Promise<void> => {
     throw new Error('URL is not specified')
   }
   await mongoose.connect(URI).then(() => console.log('Database Connected!'));
+
+  // connect the database
+  const database = mongoose.connection
+
+  // collect collection name
+  const personsCollection = database.collection("persons")
+
+  app.get('/persons', async (req, res) => {
+    const result = await personsCollection.find({}).limit(10).toArray();
+    res.send(result);
+  })
+
 }
 
 dbConnect()
