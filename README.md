@@ -1,16 +1,6 @@
 ### Start with this
 
-```
-@types/cors
-@types/dotenv
-@types/express
-cors
-dotenv
-express
-mongoose
-ts-node-dev
-typescript
-```
+`@types/cors @types/dotenv @types/express cors dotenv express mongoose ts-node-dev typescript`
 
 ```
 git clone https://github.com/sumoncse19/mongoose-typescript-starter.git
