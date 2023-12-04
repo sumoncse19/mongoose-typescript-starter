@@ -1,4 +1,13 @@
 ```
+git clone https://github.com/sumoncse19/mongoose-typescript-starter.git
+```
+
+```
+yarn install
+```
+
+### Manual
+```
 yarn init -y
 ```
 
